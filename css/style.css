@@ -27,3 +27,37 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 }
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.heading-primary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+}
+
+.heading-primary-main {
+  display: block;
+  letter-spacing: 35px;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.heading-primary-sub {
+  display: block;
+  letter-spacing: 17.4px;
+  font-size: 20px;
+  font-weight: 700;
+}
