@@ -5,19 +5,25 @@
     Dark green: #28b485
 */
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box; /* width and height include content, padding and border */
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  padding: 3rem;
 }
 
 .header {
@@ -31,12 +37,12 @@ body {
 
 .logo-box {
   position: absolute; /* header is set to position relative */
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -50,21 +56,21 @@ body {
 
 .heading-primary {
   color: #FFF;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
   display: block;
-  letter-spacing: 35px;
-  font-size: 60px;
+  letter-spacing: 3.5rem;
+  font-size: 6rem;
   font-weight: 400;
   animation: moveInLeft 1s ease-out;
 }
 
 .heading-primary-sub {
   display: block;
-  letter-spacing: 17.4px;
-  font-size: 20px;
+  letter-spacing: 1.74rem;
+  font-size: 2rem;
   font-weight: 700;
   animation: moveInRight 1s ease-out;  
 }
@@ -76,7 +82,7 @@ body {
   }
 
   80% {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   100% {
@@ -88,11 +94,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(-1rem);
   }
 
   100% {
@@ -104,7 +110,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   100% {
@@ -124,18 +130,18 @@ body {
 
 .btn-white {
   background-color: #FFF;
-  border-radius: 100px;
-  padding: 15px 30px;
-  color: #777;  
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+  color: #777;
 }
 
 .btn-white:hover {
-  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 2rem 2rem rgba(0,0,0,0.2);
   transform: translateY(-3px);
 }
 
 .btn-white:active {
-  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
   transform: translateY(-1px);
 }
 
@@ -146,7 +152,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 100px;
+  border-radius: 10rem;
   z-index: -1;
   background-color: #FFF;
   transition: all .4s;
