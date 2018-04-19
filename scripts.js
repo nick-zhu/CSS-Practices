@@ -1,9 +1,13 @@
 (function () {
-  function factory() {
-    return (...a) => {
-      a.forEach( txt => console.log(txt));
-    };
+  function obj() {
+
+  };
+
+  obj.prototype.tostring = () => {
+    console.log('tostring')
   }
-  
-  factory()('asd', 'vff', 'as');
+
+  let tmp = new obj();
+  tmp.tostring();
+
 })()
